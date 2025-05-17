@@ -1,3 +1,4 @@
+using System.Collections;
 using Oculus.Interaction;
 using UnityEngine;
 public enum KeyNote
@@ -69,9 +70,45 @@ public class PianoKey : MonoBehaviour
 {
     [SerializeField] private KeyNote note;
     [SerializeField] private PianoSamples pianoSamples;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private float fadeDuration = 1.0f; // Time in seconds for the fade
+
     
-    public void TestHover()
+    public void PlayNote()
     {
-        Debug.Log("Hovering over the key");
+        AudioClip clip = pianoSamples.GetClip(note);
+        if (audioSource && clip)
+        {
+            audioSource.clip = clip;
+            audioSource.volume = 1.0f; // Reset volume to max before playing
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning($"No audio clip found for note: {note}");
+        }
+    }
+    
+    public void StopNote()
+    {
+        StartCoroutine(FadeOutCoroutine());
+    }
+
+    private IEnumerator FadeOutCoroutine()
+    {
+        float startVolume = audioSource.volume;
+
+        // Gradually decrease volume over fadeDuration
+        float elapsedTime = 0f;
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, 0f, elapsedTime / fadeDuration);
+            yield return null; // Wait for next frame
+        }
+
+        audioSource.volume = 0f;
+        audioSource.Stop(); // Stop the audio after fading
     }
 }
+

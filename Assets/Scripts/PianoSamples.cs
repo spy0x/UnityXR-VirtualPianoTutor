@@ -3,15 +3,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PianoSamples", menuName = "Scriptable Objects/PianoSamples")]
 public class PianoSamples : ScriptableObject
 {
-    public PianoSample[] Samples;
+    public PianoSample[] samples;
 
     public AudioClip GetClip(KeyNote note)
     {
-        foreach (var sample in Samples)
+        foreach (var sample in samples)
         {
-            if (sample.Note == note)
+            if (sample.note == note)
             {
-                return sample.Clip;
+                return sample.clip;
             }
         }
         return null;
@@ -21,6 +21,6 @@ public class PianoSamples : ScriptableObject
 [System.Serializable]
 public struct PianoSample
 {
-    public KeyNote Note;
-    public AudioClip Clip;
+    public KeyNote note;
+    public AudioClip clip;
 }
