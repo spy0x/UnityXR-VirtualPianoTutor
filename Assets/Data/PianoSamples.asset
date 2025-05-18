@@ -14,4 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   samples:
   - note: 0
-    clip: {fileID: 8300000, guid: 5172a0a3509b3794ab8162a6a6f5e4d1, type: 3}
+    clip: {fileID: 8300000, guid: e59d2e45657e0c74f952022c16c52434, type: 3}
+  - note: 1
+    clip: {fileID: 8300000, guid: 95591b76afe235b48af0db137b5d8992, type: 3}
+  - note: 2
+    clip: {fileID: 8300000, guid: c6bc7f6c169a740458e3f836e17299c5, type: 3}
+  - note: 3
+    clip: {fileID: 8300000, guid: 76408d7a2b4404d41b9f5881879a1565, type: 3}
+  - note: 4
+    clip: {fileID: 8300000, guid: 602dd92a61bf371489f899e6792b16b5, type: 3}
+  - note: 5
+    clip: {fileID: 8300000, guid: 108434a4b69737542967ac41e47b41eb, type: 3}
+  - note: 6
+    clip: {fileID: 8300000, guid: 5b1aca8dff6540144a1fb7b810b967fd, type: 3}
+  - note: 7
+    clip: {fileID: 8300000, guid: 1f416305f6e098e43a02ac6bac8f21b4, type: 3}
