@@ -23,4 +23,6 @@ public struct PianoSample
 {
     public KeyNote note;
     public AudioClip clip;
+    public float noteHeight;
+    public float fNoteHeight;
 }
