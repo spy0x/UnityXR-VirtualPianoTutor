@@ -7295,10 +7295,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano49Keys
       objectReference: {fileID: 0}
-    - target: {fileID: 2500634406333243876, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
     - target: {fileID: 3242645585921067856, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7338,42 +7334,6 @@ PrefabInstance:
     - target: {fileID: 3242645585921067856, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4054256788996832444, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955057530741874092, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.012
-      objectReference: {fileID: 0}
-    - target: {fileID: 4955057530741874092, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881142204528501348, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5929692435641400472, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: note
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8794285046975434416, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833541530363489857, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: note
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833541530363489857, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: isSharpKey
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8848273482736136509, guid: aee0cf62da75c174abff0251f5c92731, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
