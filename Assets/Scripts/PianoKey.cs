@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using Oculus.Interaction;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
+
 public enum KeyNote
 {
     // From C2 to C7 (61 keys)
@@ -42,6 +44,7 @@ public enum KeyNote
     B6,
     C7
 }
+
 public class PianoKey : MonoBehaviour
 {
     [SerializeField] private KeyNote note;
@@ -71,8 +74,9 @@ public class PianoKey : MonoBehaviour
         {
             Debug.LogWarning($"No audio clip found for note: {note}");
         }
+        ScoreDisplay.Instance.OnPianoKeyPressed(note);
     }
-    
+
     public void StopNote()
     {
         StartCoroutine(FadeOutCoroutine());
@@ -94,9 +98,9 @@ public class PianoKey : MonoBehaviour
         audioSource.volume = 0f;
         audioSource.Stop(); // Stop the audio after fading
     }
-    
-    static float GetPitchOffset(int semitones) {
+
+    static float GetPitchOffset(int semitones)
+    {
         return Mathf.Pow(2f, semitones / 12f); // 12 semitones = 1 octave
     }
 }
-

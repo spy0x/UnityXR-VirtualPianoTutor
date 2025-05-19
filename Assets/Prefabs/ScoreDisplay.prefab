@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395535393542366645}
   - component: {fileID: 5171526836524075681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 4253186257803618980}
   - component: {fileID: 8667711225246547030}
   - component: {fileID: 2098967930691887420}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ GameObject:
   - component: {fileID: 4934784501531670647}
   - component: {fileID: 6293209099680850508}
   - component: {fileID: 5213454608622982756}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SecondaryButton_Base_IconAndLabel Variant
   m_TagString: QDSUISecondaryButton
   m_Icon: {fileID: 0}
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 3141809677743097463}
   - component: {fileID: 4634735041949039295}
   - component: {fileID: 2236773235052232768}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   - component: {fileID: 6165628465386399402}
   - component: {fileID: 8790690428239361684}
   - component: {fileID: 4706772996319444588}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PrimaryButton_Base_IconAndLabel
   m_TagString: QDSUIPrimaryButton
   m_Icon: {fileID: 0}
@@ -2157,7 +2157,7 @@ GameObject:
   - component: {fileID: 7355895007756299335}
   - component: {fileID: 3505477050980299043}
   - component: {fileID: 6535516352758533754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Image_VideoPlayer '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2526,7 +2526,7 @@ GameObject:
   - component: {fileID: 1568727763344450353}
   - component: {fileID: 1101689837867681200}
   - component: {fileID: 3663502870720210163}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ISDK_RayInteraction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2621,7 +2621,7 @@ GameObject:
   - component: {fileID: 4153730054075341130}
   - component: {fileID: 3377646290503173651}
   - component: {fileID: 5473264369184025804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ISDK_PokeInteraction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2694,7 +2694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290073739266057333}
   - component: {fileID: 1603403712304689061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2858,7 +2858,7 @@ GameObject:
   - component: {fileID: 8541056362579534487}
   - component: {fileID: 3118827414621274797}
   - component: {fileID: 3306302221801846635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GradientEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3053,7 +3053,8 @@ GameObject:
   - component: {fileID: 3588881932398317866}
   - component: {fileID: 674849369955222374}
   - component: {fileID: 7941734330498239398}
-  m_Layer: 0
+  - component: {fileID: 1142879504840312603}
+  m_Layer: 3
   m_Name: CanvasRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3193,6 +3194,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 1
   m_VerticalFit: 1
+--- !u!114 &1142879504840312603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6338706335259077736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enableMipmapping: 0
+  _dynamicResolution: 1
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 7937751392721483725}
+  maxTextureSize: 2048
+  manualRedraw: 0
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 2
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 1
+  _overlayEnabled: 1
 --- !u!1 &7050844341408393198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,7 +3357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7077894041672453296}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.096000016, y: 1.157, z: 0.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3703,6 +3732,8 @@ MonoBehaviour:
     clefGameObject: {fileID: 1726015605382086874}
   noteParent: {fileID: 2926410809040652171}
   notePrefab: {fileID: 6595272056204384007, guid: ec44a199afbd9fd43bf4270bad61f784, type: 3}
+  correctNote: {r: 0, g: 1, b: 0, a: 1}
+  wrongNote: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &7411766454492730452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,7 +3883,7 @@ GameObject:
   - component: {fileID: 5563900332847069177}
   - component: {fileID: 3067926209310020409}
   - component: {fileID: 381254619889531745}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Background
   m_TagString: QDSUIAccentColor
   m_Icon: {fileID: 0}
@@ -3963,7 +3994,7 @@ GameObject:
   - component: {fileID: 5766351937502802474}
   - component: {fileID: 4484022270050990808}
   - component: {fileID: 3037567178867245069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Background
   m_TagString: QDSUISecondaryButton
   m_Icon: {fileID: 0}

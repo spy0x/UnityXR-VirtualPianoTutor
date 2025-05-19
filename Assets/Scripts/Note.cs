@@ -13,7 +13,7 @@ public enum NoteOverPosition
 }
 public class Note : MonoBehaviour
 {
-    [SerializeField] private KeyNote keyNote;
+    [SerializeField] private KeyNote key;
     [SerializeField] private RectTransform gap;
     [SerializeField] private Image noteFillImage;
     [SerializeField] private PianoSamples pianoSamples;
@@ -21,9 +21,10 @@ public class Note : MonoBehaviour
     [SerializeField] private GameObject lineOverDown;
     [SerializeField] private GameObject lineOverCenter;
 
+    public KeyNote Key => key;
     public void SetNote(KeyNote note)
     {
-        keyNote = note;
+        key = note;
         SetGapHeight(pianoSamples.GetNoteHeight(note, ScoreDisplay.CurrentClef.type));
         SetOverLines(pianoSamples.GetNoteOverPosition(note, ScoreDisplay.CurrentClef.type));
     }
@@ -53,5 +54,6 @@ public class Note : MonoBehaviour
     public void SetNoteColor(Color color)
     {
         noteFillImage.color = color;
+        noteFillImage.enabled = true;
     }
 }
