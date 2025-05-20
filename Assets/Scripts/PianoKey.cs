@@ -63,9 +63,11 @@ public class PianoKey : MonoBehaviour
 
     public void PlayNote()
     {
+		StopAllCoroutines();
         AudioClip clip = pianoSamples.GetClip(note);
         if (audioSource && clip)
         {
+			audioSource.Stop();
             audioSource.clip = clip;
             audioSource.volume = 1.0f; // Reset volume to max before playing
             audioSource.Play();
