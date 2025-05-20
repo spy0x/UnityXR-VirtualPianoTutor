@@ -182,7 +182,7 @@ MonoBehaviour:
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 28
-    clip: {fileID: 8300000, guid: a9a75a2bf66b553449e06ee642c0c68d, type: 3}
+    clip: {fileID: 8300000, guid: 8b2d9c8580876fc43addd0b9b9b0e6f7, type: 3}
     noteHeight: 0
     fNoteHeight: 0
     noteOverPosition: 0
