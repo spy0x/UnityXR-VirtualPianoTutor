@@ -18,6 +18,7 @@ public class ScoreDisplay : MonoBehaviour
     [SerializeField] private Color correctNote = Color.green;
     [SerializeField] private Color wrongNote = Color.red;
     [SerializeField] private float startDelay = 2f;
+    [SerializeField] private List<NoteAccidental> accidentals = new List<NoteAccidental>();
     private List<Note> spawnedNotes = new List<Note>();
     private int currentNoteIndex = 0;
     public static Clef CurrentClef;
@@ -46,7 +47,9 @@ public class ScoreDisplay : MonoBehaviour
         for (int i = 0; i < numberOfNotes; i++)
         {
             var note = Instantiate(notePrefab, noteParent).GetComponent<Note>();
-            note.SetNote(CurrentClef.notes[Random.Range(0, CurrentClef.notes.Count)]);
+            var randomNote = CurrentClef.notes[Random.Range(0, CurrentClef.notes.Count)];
+            NoteAccidental randomAccidental = accidentals[Random.Range(0, accidentals.Count)];
+            note.SetNote(randomNote, randomAccidental);
             spawnedNotes.Add(note);
         }
     }

@@ -11,6 +11,13 @@ public enum NoteOverPosition
     LineDown,
     LineCenter
 }
+
+public enum NoteAccidental
+{
+    None,
+    Sharp,
+    Flat
+}
 public class Note : MonoBehaviour
 {
     [SerializeField] private KeyNote key;
@@ -20,15 +27,33 @@ public class Note : MonoBehaviour
     [SerializeField] private GameObject lineOverUp;
     [SerializeField] private GameObject lineOverDown;
     [SerializeField] private GameObject lineOverCenter;
+    [SerializeField] private Transform sharpKey;
+    [SerializeField] private Transform flatKey;
 
+    private NoteAccidental accidental = NoteAccidental.None;
+    public NoteAccidental Accidental => accidental;
     public KeyNote Key => key;
-    public void SetNote(KeyNote note)
+    public void SetNote(KeyNote note, NoteAccidental accidental = NoteAccidental.None)
     {
         key = note;
         SetGapHeight(pianoSamples.GetNoteHeight(note, ScoreDisplay.CurrentClef.type));
         SetOverLines(pianoSamples.GetNoteOverPosition(note, ScoreDisplay.CurrentClef.type));
+        SetAccidental(accidental);
     }
-    
+
+    private void SetAccidental(NoteAccidental noteAccidental)
+    {
+        accidental = noteAccidental;
+        if (noteAccidental == NoteAccidental.Sharp)
+        {
+            sharpKey.gameObject.SetActive(true);
+        }
+        else if (noteAccidental == NoteAccidental.Flat)
+        {
+            flatKey.gameObject.SetActive(true);
+        }
+    }
+
     private void SetGapHeight(float height)
     {
         gap.sizeDelta = new Vector2(gap.sizeDelta.x, height);

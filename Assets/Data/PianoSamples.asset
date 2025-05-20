@@ -28,79 +28,79 @@ MonoBehaviour:
   - note: 2
     clip: {fileID: 8300000, guid: c6bc7f6c169a740458e3f836e17299c5, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 110
     noteOverPosition: 0
-    fNoteOverPosition: 0
+    fNoteOverPosition: 3
   - note: 3
     clip: {fileID: 8300000, guid: 76408d7a2b4404d41b9f5881879a1565, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 105
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 4
     clip: {fileID: 8300000, guid: 602dd92a61bf371489f899e6792b16b5, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 97
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 5
     clip: {fileID: 8300000, guid: 108434a4b69737542967ac41e47b41eb, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 88
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 6
     clip: {fileID: 8300000, guid: 5b1aca8dff6540144a1fb7b810b967fd, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 79
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 7
     clip: {fileID: 8300000, guid: 1f416305f6e098e43a02ac6bac8f21b4, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 68
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 8
     clip: {fileID: 8300000, guid: 7fba24c5e36426a4eb0f2da8006fe350, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 50
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 9
     clip: {fileID: 8300000, guid: de931d74b7d797546a42faeaaac50982, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 32
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 10
     clip: {fileID: 8300000, guid: dc8856b6b50350546a7354e6b4cb29d7, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: 13
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 11
     clip: {fileID: 8300000, guid: fab59d5e29d7a7b4bbd77c7b2054aefc, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: -5
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 12
     clip: {fileID: 8300000, guid: da67906eb9a90d34dbe479587bc3f1bc, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: -24
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 13
     clip: {fileID: 8300000, guid: 8a5e9a2133a675a4bbb0cbe0adc4f017, type: 3}
     noteHeight: 0
-    fNoteHeight: 0
+    fNoteHeight: -39
     noteOverPosition: 0
     fNoteOverPosition: 0
   - note: 14
     clip: {fileID: 8300000, guid: 79a8d0a44dffdd14ebb111c45b814f8e, type: 3}
     noteHeight: 110
-    fNoteHeight: 0
+    fNoteHeight: -47
     noteOverPosition: 3
     fNoteOverPosition: 3
   - note: 15
@@ -144,4 +144,46 @@ MonoBehaviour:
     noteHeight: 32
     fNoteHeight: 0
     noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 22
+    clip: {fileID: 8300000, guid: a5f13bc3ddf738b45afee5d777949bcb, type: 3}
+    noteHeight: 13
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 23
+    clip: {fileID: 8300000, guid: 69190c87971974f47b478afba65174f3, type: 3}
+    noteHeight: -5
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 24
+    clip: {fileID: 8300000, guid: bb573d88b4903e84e894036f1763ce3e, type: 3}
+    noteHeight: -24
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 25
+    clip: {fileID: 8300000, guid: b778308e4f73c624d8a1aa4d752011a4, type: 3}
+    noteHeight: -39
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 26
+    clip: {fileID: 8300000, guid: a9a75a2bf66b553449e06ee642c0c68d, type: 3}
+    noteHeight: -47
+    fNoteHeight: 0
+    noteOverPosition: 3
+    fNoteOverPosition: 0
+  - note: 27
+    clip: {fileID: 8300000, guid: 1e0e907761d3f6345a70d13cc2396928, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 26
+    clip: {fileID: 8300000, guid: a9a75a2bf66b553449e06ee642c0c68d, type: 3}
+    noteHeight: -47
+    fNoteHeight: 0
+    noteOverPosition: 3
     fNoteOverPosition: 0
