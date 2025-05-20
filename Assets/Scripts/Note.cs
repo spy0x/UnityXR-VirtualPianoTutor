@@ -29,21 +29,27 @@ public class Note : MonoBehaviour
     [SerializeField] private GameObject lineOverCenter;
     [SerializeField] private Transform sharpKey;
     [SerializeField] private Transform flatKey;
-
-    private NoteAccidental accidental = NoteAccidental.None;
-    public NoteAccidental Accidental => accidental;
+    [SerializeField] private NoteAccidental accidental = NoteAccidental.None;
     public KeyNote Key => key;
-    public void SetNote(KeyNote note, NoteAccidental accidental = NoteAccidental.None)
+    public void SetNote(KeyNote note)
     {
         key = note;
         SetGapHeight(pianoSamples.GetNoteHeight(note, ScoreDisplay.CurrentClef.type));
         SetOverLines(pianoSamples.GetNoteOverPosition(note, ScoreDisplay.CurrentClef.type));
-        SetAccidental(accidental);
+        SetAccidental();
     }
 
-    private void SetAccidental(NoteAccidental noteAccidental)
+    private void SetAccidental()
     {
-        accidental = noteAccidental;
+        NoteAccidental noteAccidental = NoteAccidental.None;
+        if (key.ToString().Contains("Sharp"))
+        {
+            noteAccidental = NoteAccidental.Sharp;
+        }
+        else if (key.ToString().Contains("Flat"))
+        {
+            noteAccidental = NoteAccidental.Flat;
+        }
         if (noteAccidental == NoteAccidental.Sharp)
         {
             sharpKey.gameObject.SetActive(true);

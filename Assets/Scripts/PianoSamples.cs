@@ -5,13 +5,16 @@ public class PianoSamples : ScriptableObject
 {
     public PianoSample[] samples;
 
-    public AudioClip GetClip(KeyNote note)
+    public AudioClip GetClip(KeyNote[] note)
     {
         foreach (var sample in samples)
         {
-            if (sample.note == note)
+            foreach (var n in note)
             {
-                return sample.clip;
+                if (sample.note == n)
+                {
+                    return sample.clip;
+                }
             }
         }
         return null;

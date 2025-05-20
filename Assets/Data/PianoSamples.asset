@@ -181,9 +181,309 @@ MonoBehaviour:
     fNoteHeight: 0
     noteOverPosition: 0
     fNoteOverPosition: 0
-  - note: 26
+  - note: 28
+    clip: {fileID: 8300000, guid: a9a75a2bf66b553449e06ee642c0c68d, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 36
+    clip: {fileID: 8300000, guid: e59d2e45657e0c74f952022c16c52434, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 37
+    clip: {fileID: 8300000, guid: 95591b76afe235b48af0db137b5d8992, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 38
+    clip: {fileID: 8300000, guid: 95591b76afe235b48af0db137b5d8992, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 39
+    clip: {fileID: 8300000, guid: c6bc7f6c169a740458e3f836e17299c5, type: 3}
+    noteHeight: 0
+    fNoteHeight: 110
+    noteOverPosition: 0
+    fNoteOverPosition: 3
+  - note: 40
+    clip: {fileID: 8300000, guid: 76408d7a2b4404d41b9f5881879a1565, type: 3}
+    noteHeight: 0
+    fNoteHeight: 105
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 41
+    clip: {fileID: 8300000, guid: 602dd92a61bf371489f899e6792b16b5, type: 3}
+    noteHeight: 0
+    fNoteHeight: 97
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 42
+    clip: {fileID: 8300000, guid: 602dd92a61bf371489f899e6792b16b5, type: 3}
+    noteHeight: 0
+    fNoteHeight: 97
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 43
+    clip: {fileID: 8300000, guid: 108434a4b69737542967ac41e47b41eb, type: 3}
+    noteHeight: 0
+    fNoteHeight: 88
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 44
+    clip: {fileID: 8300000, guid: 108434a4b69737542967ac41e47b41eb, type: 3}
+    noteHeight: 0
+    fNoteHeight: 88
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 45
+    clip: {fileID: 8300000, guid: 5b1aca8dff6540144a1fb7b810b967fd, type: 3}
+    noteHeight: 0
+    fNoteHeight: 79
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 46
+    clip: {fileID: 8300000, guid: 1f416305f6e098e43a02ac6bac8f21b4, type: 3}
+    noteHeight: 0
+    fNoteHeight: 68
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 47
+    clip: {fileID: 8300000, guid: 7fba24c5e36426a4eb0f2da8006fe350, type: 3}
+    noteHeight: 0
+    fNoteHeight: 50
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 48
+    clip: {fileID: 8300000, guid: 7fba24c5e36426a4eb0f2da8006fe350, type: 3}
+    noteHeight: 0
+    fNoteHeight: 50
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 49
+    clip: {fileID: 8300000, guid: de931d74b7d797546a42faeaaac50982, type: 3}
+    noteHeight: 0
+    fNoteHeight: 32
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 50
+    clip: {fileID: 8300000, guid: dc8856b6b50350546a7354e6b4cb29d7, type: 3}
+    noteHeight: 0
+    fNoteHeight: 13
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 51
+    clip: {fileID: 8300000, guid: fab59d5e29d7a7b4bbd77c7b2054aefc, type: 3}
+    noteHeight: 0
+    fNoteHeight: -5
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 52
+    clip: {fileID: 8300000, guid: fab59d5e29d7a7b4bbd77c7b2054aefc, type: 3}
+    noteHeight: 0
+    fNoteHeight: -5
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 53
+    clip: {fileID: 8300000, guid: da67906eb9a90d34dbe479587bc3f1bc, type: 3}
+    noteHeight: 0
+    fNoteHeight: -24
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 54
+    clip: {fileID: 8300000, guid: da67906eb9a90d34dbe479587bc3f1bc, type: 3}
+    noteHeight: 0
+    fNoteHeight: -24
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 55
+    clip: {fileID: 8300000, guid: 8a5e9a2133a675a4bbb0cbe0adc4f017, type: 3}
+    noteHeight: 0
+    fNoteHeight: -39
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 56
+    clip: {fileID: 8300000, guid: 79a8d0a44dffdd14ebb111c45b814f8e, type: 3}
+    noteHeight: 110
+    fNoteHeight: -47
+    noteOverPosition: 3
+    fNoteOverPosition: 3
+  - note: 57
+    clip: {fileID: 8300000, guid: 5771b6b8d0c1cfc41b125c97d4aa2352, type: 3}
+    noteHeight: 105
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 58
+    clip: {fileID: 8300000, guid: 5771b6b8d0c1cfc41b125c97d4aa2352, type: 3}
+    noteHeight: 105
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 59
+    clip: {fileID: 8300000, guid: 76337906c0dcee046be0d16580f0d498, type: 3}
+    noteHeight: 97
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 60
+    clip: {fileID: 8300000, guid: 81a3e74b433ce70419f6ca15ab0467cf, type: 3}
+    noteHeight: 88
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 61
+    clip: {fileID: 8300000, guid: c84b9141cb0be2048870583602d83ad0, type: 3}
+    noteHeight: 79
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 62
+    clip: {fileID: 8300000, guid: c84b9141cb0be2048870583602d83ad0, type: 3}
+    noteHeight: 79
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 63
+    clip: {fileID: 8300000, guid: 9f7a6e2c35ee9d24e8f424b27a8a4e69, type: 3}
+    noteHeight: 68
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 64
+    clip: {fileID: 8300000, guid: 9f7a6e2c35ee9d24e8f424b27a8a4e69, type: 3}
+    noteHeight: 68
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 65
+    clip: {fileID: 8300000, guid: 87faa9b2ec18ffe40bc3108b1a76ed36, type: 3}
+    noteHeight: 50
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 66
+    clip: {fileID: 8300000, guid: 0964ed8d1e1e8194ba31000922123d0c, type: 3}
+    noteHeight: 32
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 67
+    clip: {fileID: 8300000, guid: a5f13bc3ddf738b45afee5d777949bcb, type: 3}
+    noteHeight: 13
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 68
+    clip: {fileID: 8300000, guid: a5f13bc3ddf738b45afee5d777949bcb, type: 3}
+    noteHeight: 13
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 69
+    clip: {fileID: 8300000, guid: 69190c87971974f47b478afba65174f3, type: 3}
+    noteHeight: -5
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 70
+    clip: {fileID: 8300000, guid: bb573d88b4903e84e894036f1763ce3e, type: 3}
+    noteHeight: -24
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 71
+    clip: {fileID: 8300000, guid: b778308e4f73c624d8a1aa4d752011a4, type: 3}
+    noteHeight: -39
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 72
+    clip: {fileID: 8300000, guid: b778308e4f73c624d8a1aa4d752011a4, type: 3}
+    noteHeight: -39
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 73
     clip: {fileID: 8300000, guid: a9a75a2bf66b553449e06ee642c0c68d, type: 3}
     noteHeight: -47
     fNoteHeight: 0
     noteOverPosition: 3
+    fNoteOverPosition: 0
+  - note: 74
+    clip: {fileID: 8300000, guid: a9a75a2bf66b553449e06ee642c0c68d, type: 3}
+    noteHeight: -47
+    fNoteHeight: 0
+    noteOverPosition: 3
+    fNoteOverPosition: 0
+  - note: 75
+    clip: {fileID: 8300000, guid: 1e0e907761d3f6345a70d13cc2396928, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 76
+    clip: {fileID: 8300000, guid: 8b2d9c8580876fc43addd0b9b9b0e6f7, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 77
+    clip: {fileID: 8300000, guid: 18af5bbd6321a4d4385ae7e38a3608ba, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 78
+    clip: {fileID: 8300000, guid: 18af5bbd6321a4d4385ae7e38a3608ba, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 79
+    clip: {fileID: 8300000, guid: c8f0945e019292c4f85a8bf3cfd2dee2, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 80
+    clip: {fileID: 8300000, guid: 9691a567f18d16948b62642d4d1d4434, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 81
+    clip: {fileID: 8300000, guid: e9030219a6d06c346ae1e964d87488e8, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 82
+    clip: {fileID: 8300000, guid: e9030219a6d06c346ae1e964d87488e8, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 83
+    clip: {fileID: 8300000, guid: a85d5e2755ad12b4ebc112ba9521be67, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 3
+    fNoteOverPosition: 0
+  - note: 84
+    clip: {fileID: 8300000, guid: a85d5e2755ad12b4ebc112ba9521be67, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
+    fNoteOverPosition: 0
+  - note: 85
+    clip: {fileID: 8300000, guid: b6d2f198081ad214cbbbb48c2ba2e8d9, type: 3}
+    noteHeight: 0
+    fNoteHeight: 0
+    noteOverPosition: 0
     fNoteOverPosition: 0

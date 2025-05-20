@@ -9,6 +9,7 @@ public enum ClefType
     Treble,
     Bass
 }
+
 public class ScoreDisplay : MonoBehaviour
 {
     [SerializeField] private int numberOfNotes = 5;
@@ -18,7 +19,6 @@ public class ScoreDisplay : MonoBehaviour
     [SerializeField] private Color correctNote = Color.green;
     [SerializeField] private Color wrongNote = Color.red;
     [SerializeField] private float startDelay = 2f;
-    [SerializeField] private List<NoteAccidental> accidentals = new List<NoteAccidental>();
     private List<Note> spawnedNotes = new List<Note>();
     private int currentNoteIndex = 0;
     public static Clef CurrentClef;
@@ -29,7 +29,7 @@ public class ScoreDisplay : MonoBehaviour
         if (!Instance)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -48,8 +48,7 @@ public class ScoreDisplay : MonoBehaviour
         {
             var note = Instantiate(notePrefab, noteParent).GetComponent<Note>();
             var randomNote = CurrentClef.notes[Random.Range(0, CurrentClef.notes.Count)];
-            NoteAccidental randomAccidental = accidentals[Random.Range(0, accidentals.Count)];
-            note.SetNote(randomNote, randomAccidental);
+            note.SetNote(randomNote);
             spawnedNotes.Add(note);
         }
     }
@@ -60,7 +59,7 @@ public class ScoreDisplay : MonoBehaviour
         CurrentClef = usedClef[Random.Range(0, usedClef.Count)];
         CurrentClef.clefGameObject.SetActive(true);
     }
-    
+
     private IEnumerator InitGame()
     {
         yield return new WaitForSeconds(startDelay);
@@ -69,29 +68,37 @@ public class ScoreDisplay : MonoBehaviour
         {
             Destroy(note.gameObject);
         }
+
         spawnedNotes.Clear();
         SetCurrentClef();
         SpawnNotes();
     }
-    
-    public void OnPianoKeyPressed(KeyNote note)
+
+    public void OnPianoKeyPressed(KeyNote[] note)
     {
         if (currentNoteIndex >= spawnedNotes.Count) return;
-        if (spawnedNotes[currentNoteIndex].Key == note)
+        
+        Color noteColor = wrongNote;
+        foreach (var n in note)
         {
-            spawnedNotes[currentNoteIndex].SetNoteColor(correctNote);
+            if (spawnedNotes[currentNoteIndex].Key == n)
+            {
+                noteColor = correctNote;
+                break;
+            }
         }
-        else
-        {
-            spawnedNotes[currentNoteIndex].SetNoteColor(wrongNote);
-        }
+
+        spawnedNotes[currentNoteIndex].SetNoteColor(noteColor);
+
         currentNoteIndex++;
+
         if (currentNoteIndex >= spawnedNotes.Count)
         {
             StartCoroutine(InitGame());
         }
     }
 }
+
 [System.Serializable]
 public struct Clef
 {
