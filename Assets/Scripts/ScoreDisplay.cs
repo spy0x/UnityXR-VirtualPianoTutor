@@ -84,20 +84,13 @@ public class ScoreDisplay : MonoBehaviour
     public void OnPianoKeyPressed(KeyNote[] note)
     {
         if (currentNoteIndex >= spawnedNotes.Count) return;
-
-        Color noteColor = wrongNote;
-        foreach (var n in note)
-        {
-            if (spawnedNotes[currentNoteIndex].Key == n)
-            {
-                noteColor = correctNote;
-                break;
-            }
-        }
+        
+        Color noteColor = GetNoteColor(note);
 
         spawnedNotes[currentNoteIndex].SetNoteColor(noteColor);
         spawnedNotes[currentNoteIndex].SetAnimationState(false);
         
+		StopAllCoroutines();
         if (noteColor == correctNote)
         {
             StartCoroutine(SetFeedBackText("Correct! It's " + spawnedNotes[currentNoteIndex].Key));
@@ -117,6 +110,33 @@ public class ScoreDisplay : MonoBehaviour
             spawnedNotes[currentNoteIndex].SetAnimationState(true);
         }
     }
+
+    public Color GetNoteColor(KeyNote[] note)
+    {
+        Color noteColor = wrongNote;
+        foreach (var n in note)
+        {
+            if (spawnedNotes[currentNoteIndex].Key == n)
+            {
+                noteColor = correctNote;
+                break;
+            }
+        }
+        return noteColor;
+    }
+    
+    public bool IsCorrectNote(KeyNote[] note)
+    {
+        foreach (var n in note)
+        {
+            if (spawnedNotes[currentNoteIndex].Key == n)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private IEnumerator SetFeedBackText(string text)
     {
         scoreTextFeedback.text = text;

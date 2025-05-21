@@ -102,6 +102,11 @@ public class PianoKey : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private float fadeDuration = 1.0f; // Time in seconds for the fade
     [SerializeField] private bool isSharpKey;
+    [SerializeField] private InteractableColorVisual interactableColorVisual;
+    [SerializeField] private ParticleSystem particlesCorrect;
+    [SerializeField] private ParticleSystem particlesWrong;
+
+    private Color defaultColor;
 
     private void Start()
     {
@@ -126,6 +131,7 @@ public class PianoKey : MonoBehaviour
         {
             Debug.LogWarning($"No audio clip found for note: {note}");
         }
+        PlayParticles(ScoreDisplay.Instance.IsCorrectNote(note));
         ScoreDisplay.Instance.OnPianoKeyPressed(note);
     }
 
@@ -154,5 +160,32 @@ public class PianoKey : MonoBehaviour
     static float GetPitchOffset(int semitones)
     {
         return Mathf.Pow(2f, semitones / 12f); // 12 semitones = 1 octave
+    }
+
+    public void OnKeyHover()
+    {
+        Color keySelectColor = ScoreDisplay.Instance.GetNoteColor(note);
+        InteractableColorVisual.ColorState selectColorState = new InteractableColorVisual.ColorState
+        {
+            Color = keySelectColor,
+            ColorTime = 0.05f,
+            ColorCurve = AnimationCurve.EaseInOut(0, 0, 1, 1)
+        };
+        if (interactableColorVisual)
+        {
+            interactableColorVisual.InjectOptionalSelectColorState(selectColorState);
+        }
+    }
+    
+    private void PlayParticles(bool isCorrect)
+    {
+        if (isCorrect)
+        {
+            particlesCorrect.Play();
+        }
+        else
+        {
+            particlesWrong.Play();
+        }
     }
 }
