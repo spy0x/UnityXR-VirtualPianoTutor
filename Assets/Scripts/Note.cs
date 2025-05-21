@@ -30,6 +30,7 @@ public class Note : MonoBehaviour
     [SerializeField] private Transform sharpKey;
     [SerializeField] private Transform flatKey;
     [SerializeField] private NoteAccidental accidental = NoteAccidental.None;
+    [SerializeField] private GameObject noteAnimation;
     public KeyNote Key => key;
     public void SetNote(KeyNote note)
     {
@@ -86,5 +87,9 @@ public class Note : MonoBehaviour
     {
         noteFillImage.color = color;
         noteFillImage.enabled = true;
+    }
+    public void SetAnimationState(bool state)
+    {
+        noteAnimation.SetActive(state);
     }
 }

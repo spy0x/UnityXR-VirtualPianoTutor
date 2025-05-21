@@ -75,8 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08ab46e8fb05dc46b34e54466dc11e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _position: {x: 0, y: 0, z: 0}
-  _size: {x: 0.024, y: 0.15, z: 1}
+  _position: {x: 0, y: -0.05, z: 0}
+  _size: {x: 0.024, y: 0.06, z: 1}
 --- !u!1 &3256572273490928095
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62719f322fca12849ae7a399b6f883ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  note: 0
+  note: 
   pianoSamples: {fileID: 11400000, guid: f91591dbf83ac9e48975d8db3ac622f3, type: 2}
   audioSource: {fileID: 8249077966880365954}
   fadeDuration: 1

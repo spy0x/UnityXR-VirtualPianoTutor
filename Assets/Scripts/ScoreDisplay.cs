@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -19,6 +20,8 @@ public class ScoreDisplay : MonoBehaviour
     [SerializeField] private Color correctNote = Color.green;
     [SerializeField] private Color wrongNote = Color.red;
     [SerializeField] private float startDelay = 2f;
+    [SerializeField] private TextMeshProUGUI scoreTextFeedback;
+    [SerializeField] private float feedbackDuration = 2f;
     private List<Note> spawnedNotes = new List<Note>();
     private int currentNoteIndex = 0;
     public static Clef CurrentClef;
@@ -39,6 +42,7 @@ public class ScoreDisplay : MonoBehaviour
 
     void Start()
     {
+        scoreTextFeedback.text = "";
         StartCoroutine(InitGame());
     }
 
@@ -51,6 +55,8 @@ public class ScoreDisplay : MonoBehaviour
             note.SetNote(randomNote);
             spawnedNotes.Add(note);
         }
+
+        spawnedNotes[0].SetAnimationState(true);
     }
 
     private void SetCurrentClef()
@@ -63,6 +69,7 @@ public class ScoreDisplay : MonoBehaviour
     private IEnumerator InitGame()
     {
         yield return new WaitForSeconds(startDelay);
+        scoreTextFeedback.text = "";
         currentNoteIndex = 0;
         foreach (Note note in spawnedNotes)
         {
@@ -77,7 +84,7 @@ public class ScoreDisplay : MonoBehaviour
     public void OnPianoKeyPressed(KeyNote[] note)
     {
         if (currentNoteIndex >= spawnedNotes.Count) return;
-        
+
         Color noteColor = wrongNote;
         foreach (var n in note)
         {
@@ -89,13 +96,32 @@ public class ScoreDisplay : MonoBehaviour
         }
 
         spawnedNotes[currentNoteIndex].SetNoteColor(noteColor);
-
+        spawnedNotes[currentNoteIndex].SetAnimationState(false);
+        
+        if (noteColor == correctNote)
+        {
+            StartCoroutine(SetFeedBackText("Correct! It's " + spawnedNotes[currentNoteIndex].Key));
+        }
+        else
+        {
+            StartCoroutine(SetFeedBackText("Wrong! It's " + spawnedNotes[currentNoteIndex].Key));
+        }
         currentNoteIndex++;
 
         if (currentNoteIndex >= spawnedNotes.Count)
         {
             StartCoroutine(InitGame());
         }
+        else
+        {
+            spawnedNotes[currentNoteIndex].SetAnimationState(true);
+        }
+    }
+    private IEnumerator SetFeedBackText(string text)
+    {
+        scoreTextFeedback.text = text;
+        yield return new WaitForSeconds(feedbackDuration);
+        scoreTextFeedback.text = "";
     }
 }
 
